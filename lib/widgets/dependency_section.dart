@@ -21,7 +21,7 @@ class DependencySection extends StatelessWidget {
         Container(color: Colors.indigo, padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16), child: Text(category.toUpperCase(), style: text.titleSmall!.copyWith(color: Colors.white)),),
         const SizedBox(height: 8,),
         Wrap(
-          runSpacing: 16, spacing: 16,
+          runSpacing: 16, spacing: 16, alignment: WrapAlignment.center,
           children: dependables.map((e) => DependableWidget(id: e.key, dependable: e.value,)).toList(),
         ),
         const SizedBox(height: 8,),
